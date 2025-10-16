@@ -3,7 +3,7 @@
 using namespace std;
  
 int main() {
-	ManagementSys obj(false);
+	ManagementSys obj;
 	while (true) {
 		cout << "\n---------BANKING MANAGEMENT SYSTEM---------\n";
 		cout << "1.Create new account\n";
@@ -19,7 +19,7 @@ int main() {
 		switch (choice) {
 		case '1': {
 			cin.ignore();
-			ManagementSys newAcc;
+			obj.createAccount();
 			continue;
 		}
 		case '2':
